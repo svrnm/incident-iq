@@ -8,6 +8,7 @@
   "deepLink": "string",
   "dateTime": "date",
   "timestamp": "integer",
+  "controller": "string",
   "application": "string",
   "tier": "string",
   "node": "string",

@@ -22,7 +22,7 @@ Run [install.sh](install.sh) from your command line.
 This script executes the following tasks:
 
 - Creating the *incident_events* schema in Analytics
-- (tbd) Creating the http action template to feed incident data into Analytics
+- Creating the http action template to feed incident data into Analytics
 - (tbd) Creating the business journey *incident_duration*
 
 Afterwards you can go into your "Alert&Respond" section and connect those health rules, that should be feed into Analytics, with the newly created action template.
