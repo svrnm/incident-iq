@@ -10,7 +10,7 @@ NODE="${TIER}-${RANDOM:0:1}"
 
 echo "$APPLICATION;$TIER;$NODE"
 
-source ./env.sh
+source ../env.sh
 ID=${RANDOM}
 DATE="`date +%s`000"
 

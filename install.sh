@@ -2,7 +2,20 @@
 
 source ./env.sh
 
+function _parseurl() {
+# http://stackoverflow.com/questions/6174220/parse-url-in-shell-script#6174447
+
+proto="$(echo $1 | grep :// | sed -e's,^\(.*://\).*,\1,g')"
+url="$(echo ${1/$proto/})"
+host="$(echo ${url} | cut -d/ -f1)"
+port="$(echo $host | sed -e 's,^.*:,:,g' -e 's,.*:\([0-9]*\).*,\1,g' -e 's,[^0-9],,g')"
+hostname=$(echo ${host/":$port"/})
+
+echo $proto $hostname ${port:-0}
+}
+
 function _cleanexit() {
+  echo "Cleaning up..."
   rm -f act.sh # actiontemplate.local.json
   exit
 }
@@ -35,7 +48,8 @@ function _step1() {
 
 function _step2() {
   echo -en "Installing http action template... ";
-  sed -e "s#\${ENDPOINT}#${ENDPOINT}#" -e "s#\${API_KEY}#${API_KEY}#" -e "s#\${ACCOUNT_NAME}#${ACCOUNT_NAME}#" actiontemplate.json > actiontemplate.local.json
+  PARSED_URL=(`_parseurl ${ENDPOINT}`)
+  sed -e "s#\${ENDPOINT\[0\]}#${PARSED_URL[0]}#" -e "s#\${ENDPOINT\[1\]}#${PARSED_URL[1]}#" -e "s#\${ENDPOINT\[2\]}#${PARSED_URL[2]}#" -e "s#\${API_KEY}#${API_KEY}#" -e "s#\${ACCOUNT_NAME}#${ACCOUNT_NAME}#" actiontemplate.json > actiontemplate.local.json
   RESULT_STEP_2_PRE=`./act.sh -E local actiontemplate createmediatype -n 'application/vnd.appd.events+json'`
   RESULT_STEP_2=`./act.sh actiontemplate import -t httprequest actiontemplate.local.json`
   if [[ "${RESULT_STEP_2}" == *'"success":true'* ]]
@@ -48,15 +62,10 @@ function _step2() {
   fi
 }
 
+cd scripts || exit;
 
 _step0
-#_step1
+_step1
 _step2
-
-
-#echo -en "Installing action template... ";
-#echo "$(<actiontemplate.json)"
-#RESULT_STEP_2=`./act.sh actiontemplate import actiontemplate.json`
-#echo $RESULT_STEP_2
-
 _cleanexit
+cd ..

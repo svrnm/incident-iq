@@ -6,7 +6,7 @@
   "defaultCustomProperties" : [ ],
   "method" : "POST",
   "scheme" : "HTTPS",
-  "host" : "http://localhost:9080",
+  "host" : "${ENDPOINT[1]}",
   "port" : 0,
   "path" : "/events/publish/incident_events",
   "query" : "",
@@ -18,12 +18,12 @@
     "id" : 0,
     "version" : 0,
     "name" : "X-Events-API-AccountName",
-    "value" : "customer1_0974e892-a739-40f8-840c-c60d21c1a2e7"
+    "value" : "${ACCOUNT_NAME}"
   }, {
     "id" : 0,
     "version" : 0,
     "name" : "X-Events-API-Key",
-    "value" : "db53ea90-2f57-4f9d-a637-a88382552d0d"
+    "value" : "${API_KEY}"
   } ],
   "payloadTemplate" : {
     "httpRequestActionMediaType" : "application/vnd.appd.events+json",
