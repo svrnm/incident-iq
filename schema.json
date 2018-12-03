@@ -1,0 +1,19 @@
+{
+"schema": {
+  "id": "integer",
+  "milestone": "string",
+  "eventType": "string",
+  "displayName": "string",
+  "summary": "string",
+  "deepLink": "string",
+  "dateTime": "date",
+  "timestamp": "integer",
+  "application": "string",
+  "tier": "string",
+  "node": "string",
+  "db": "string",
+  "severity": "string",
+  "severityLevel": "integer",
+  "daysInMonth": "integer"
+  }
+}

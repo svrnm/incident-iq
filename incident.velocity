@@ -1,0 +1,47 @@
+[
+#foreach( ${event} in ${fullEventList} )
+{
+#set( $severityLevel = 0 )
+#if($event.severity == "WARN")
+#set( $severityLevel = 1 )
+#elseif($event.severity == "ERROR")
+#set( $severityLevel = 2 )
+#end
+
+#set( $milestone = "unknown")
+#if($event.eventType.toString().contains("POLICY_OPEN"))
+#set( $milestone = "start" )
+#elseif($event.eventType.toString().contains("POLICY_CLOSE") || $event.eventType.toString().contains("POLICY_CANCELED") )
+#set( $milestone = "end" )
+#elseif($event.eventType.toString().contains("POLICY_"))
+#set( $milestone = "continue" )
+#end
+
+#set( $daysInMonth = 31)
+#set($daysWith30=([3,5,8,10]))
+#if($daysWith30.contains($event.eventTime.getMonth()))
+#set( $daysInMonth = 30)
+#elseif($event.eventTime.getMonth() == 1 && $event.eventTime.getMonth()%4 != 0)
+#set( $daysInMonth = 28)
+#elseif($event.eventTime.getMonth() == 1 && $event.eventTime.getMonth()%4 == 0)
+#set( $daysInMonth = 29)
+#end
+
+"id": $!{event.incident.id},
+"milestone": "${milestone}"
+"eventType": "$!{event.eventType}",
+"displayName": "$!{event.displayName}",
+"summary:" "$!{event.summaryMessage}",
+"deepLink": "$!{event.deepLink}",
+"dateTime": ${event.eventTime.getTime()},
+"timestamp": ${event.eventTime.getTime()},
+"application": "$!{event.application.name}",
+"tier": "$!{event.tier.name}",
+"node": "$!{event.node.name}",
+"db": "$!{event.db.name}",
+"severity": "$!{event.severity}",
+"severityLevel": ${severityLevel},
+"daysInMonth": ${daysInMonth}
+}#if( $foreach.hasNext ),#end
+#end
+]

@@ -1,0 +1,95 @@
+[ {
+  "actionPlanType" : "httprequest",
+  "name" : "IncidentEvents",
+  "oneRequestPerEvent" : false,
+  "eventClampLimit" : -1,
+  "defaultCustomProperties" : [ ],
+  "method" : "POST",
+  "scheme" : "HTTPS",
+  "host" : "${ENDPOINT}",
+  "port" : 0,
+  "path" : "/events/publish/incident_events",
+  "query" : "",
+  "urlCharset" : "UTF_8",
+  "authType" : "NONE",
+  "authUsername" : null,
+  "authPassword" : "",
+  "headers" : [ {
+    "id" : 0,
+    "version" : 0,
+    "name" : "X-Events-API-AccountName",
+    "value" : "${ACCOUNT_NAME}"
+  }, {
+    "id" : 0,
+    "version" : 0,
+    "name" : "X-Events-API-Key",
+    "value" : "${API_KEY}"
+  } ],
+  "payloadTemplate" : {
+    "httpRequestActionMediaType" : "application/vnd.appd.events+json",
+    "charset" : "UTF_8",
+    "formDataPairs" : [ ],
+    "payload" : "[
+#foreach( ${event} in ${fullEventList} )
+{
+#set( $severityLevel = 0 )
+#if($event.severity == \"WARN\")
+#set( $severityLevel = 1 )
+#elseif($event.severity == \"ERROR\")
+#set( $severityLevel = 2 )
+#end
+
+#set( $milestone = \"unknown\")
+#if($event.eventType.toString().contains(\"POLICY_OPEN\"))
+#set( $milestone = \"start\" )
+#elseif($event.eventType.toString().contains(\"POLICY_CLOSE\") || $event.eventType.toString().contains(\"POLICY_CANCELED\") )
+#set( $milestone = \"end\" )
+#elseif($event.eventType.toString().contains(\"POLICY_\"))
+#set( $milestone = \"continue\" )
+#end
+
+#set( $daysInMonth = 31)
+#set($daysWith30=([3,5,8,10]))
+#if($daysWith30.contains($event.eventTime.getMonth()))
+#set( $daysInMonth = 30)
+#elseif($event.eventTime.getMonth() == 1 && $event.eventTime.getMonth()%4 != 0)
+#set( $daysInMonth = 28)
+#elseif($event.eventTime.getMonth() == 1 && $event.eventTime.getMonth()%4 == 0)
+#set( $daysInMonth = 29)
+#end
+
+\"id\": $!{event.incident.id},
+\"milestone\": \"${milestone}\"
+\"eventType\": \"$!{event.eventType}\",
+\"displayName\": \"$!{event.displayName}\",
+\"summary:\" \"$!{event.summaryMessage}\",
+\"deepLink\": \"$!{event.deepLink}\",
+\"eventDateTime\": ${event.eventTime.getTime()},
+\"eventTimestamp\": ${event.eventTime.getTime()},
+\"application\": \"$!{event.application.name}\",
+\"tier\": \"$!{event.tier.name}\",
+\"node\": \"$!{event.node.name}\",
+\"db\": \"$!{event.db.name}\",
+\"severity\": \"$!{event.severity}\",
+\"severityLevel\": ${severityLevel},
+\"daysInMonth\": ${daysInMonth}
+}#if( $foreach.hasNext ),#end
+#end
+]"
+  },
+  "connectTimeoutInMillis" : 5000,
+  "socketTimeoutInMillis" : 15000,
+  "maxFollowRedirects" : 0,
+  "responseMatchCriteriaAnyTemplate" : [ {
+    "statusCode" : 200,
+    "requireContent" : false,
+    "httpRequestActionMediaType" : null
+  } ],
+  "responseMatchCriteriaNoneTemplate" : [ ],
+  "testLogLevel" : "DEBUG",
+  "testPropertiesPairs" : [ ],
+  "eventTypeCountPairs" : [ {
+    "eventType" : "POLICY_CLOSE_WARNING",
+    "count" : 1
+  } ]
+} ]
