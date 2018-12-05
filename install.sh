@@ -50,8 +50,8 @@ function _step2() {
   echo -en "Installing http action template... ";
   PARSED_URL=(`_parseurl ${ENDPOINT}`)
   sed -e "s#\${ENDPOINT\[0\]}#${PARSED_URL[0]}#" -e "s#\${ENDPOINT\[1\]}#${PARSED_URL[1]}#" -e "s#\${ENDPOINT\[2\]}#${PARSED_URL[2]}#" -e "s#\${API_KEY}#${API_KEY}#" -e "s#\${ACCOUNT_NAME}#${ACCOUNT_NAME}#" actiontemplate.json > actiontemplate.local.json
-  RESULT_STEP_2_PRE=`./act.sh -E local actiontemplate createmediatype -n 'application/vnd.appd.events+json'`
-  RESULT_STEP_2=`./act.sh actiontemplate import -t httprequest actiontemplate.local.json`
+  RESULT_STEP_2_PRE=`./act.sh -H ${APPD_CONTROLLER} -C ${APPD_CREDENTIALS} actiontemplate createmediatype -n 'application/vnd.appd.events+json'`
+  RESULT_STEP_2=`./act.sh -H ${APPD_CONTROLLER} -C ${APPD_CREDENTIALS} actiontemplate import -t httprequest actiontemplate.local.json`
   if [[ "${RESULT_STEP_2}" == *'"success":true'* ]]
   then
     echo "succeeded."
@@ -62,10 +62,31 @@ function _step2() {
   fi
 }
 
+function _step3() {
+  echo -en "Installing business journey... ";
+  RESULT_STEP_3_A=`./act.sh -H ${APPD_CONTROLLER} -C ${APPD_CREDENTIALS} bizjourney import journey.json`
+  if [[ "${RESULT_STEP_3_A}" != *'errorMessage'* ]]
+  then
+    RESULT_STEP_3_B=`./act.sh -H ${APPD_CONTROLLER} -C ${APPD_CREDENTIALS} bizjourney enable ${RESULT_STEP_3_A}`
+    if [[ "${RESULT_STEP_3_A}" != *'rootExceptionClass'* ]]
+    then
+      echo "succeeded."
+    else
+      echo "failed:"
+      echo ${RESULT_STEP_3_B}
+    fi
+  else
+    echo "failed:"
+    echo ${RESULT_STEP_3_A}
+    _cleanexit
+  fi
+}
+
 cd scripts || exit;
 
 _step0
 _step1
 _step2
+_step3
 _cleanexit
 cd ..

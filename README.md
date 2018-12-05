@@ -21,9 +21,10 @@ Download or clone this git repository. Next open the file [env.sh](env.sh) with 
 Run [install.sh](install.sh) from your command line.
 This script executes the following tasks:
 
+- Download [act.sh](https://github.com/Appdynamics/api-commandline-tool) to execute controller calls
 - Creating the *incident_events* schema in Analytics
 - Creating the http action template to feed incident data into Analytics
-- (tbd) Creating the business journey *incident_duration*
+- Creating the business journey *incident_duration*
 
 Afterwards you can go into your "Alert&Respond" section and connect those health rules, that should be feed into Analytics, with the newly created action template.
 
