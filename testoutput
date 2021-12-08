@@ -1,0 +1,3564 @@
+-----------------	Test Transcript #0   -----------------
+Status:	FAILURE
+Start Renderer Time:
+End Render Time:	2018-11-29T05:39:23.511-0800
+Start Request Time:	2018-11-29T05:39:23.511-0800
+End Request Time:	2018-11-29T05:39:23.824-0800
+Start Processing Time:	2018-11-29T05:39:23.824-0800
+End Processing Time:	2018-11-29T05:39:23.824-0800
+Context Map:
+                                {
+  "controllerUrl" : "https://mycompany.saas.appdynamics.com",
+  "appDynamicsIcon" : {
+    "name" : "logo_icon",
+    "fileName" : "logo_icon.png",
+    "deepLink" : "https://mycompany.saas.appdynamics.com/images/logo_icon.png",
+    "mimeContentRef" : "cid:logo_icon@appdynamics.com"
+  },
+  "appDynamicsLogo" : {
+    "name" : "logo",
+    "fileName" : "logo.png",
+    "deepLink" : "https://mycompany.saas.appdynamics.com/images/logo.png",
+    "mimeContentRef" : "cid:logo@appdynamics.com"
+  },
+  "account" : {
+    "entityType" : "ACCOUNT",
+    "id" : 11534,
+    "name" : "mycompany",
+    "entityTypeDisplayName" : "Account",
+    "addEntityType" : false
+  },
+  "policy" : {
+    "entityType" : "EVENT_REACTOR",
+    "id" : 7,
+    "name" : "Sample Policy Name",
+    "digest" : false,
+    "digestDurationInMins" : 1,
+    "type" : "IMMEDIATE",
+    "entityTypeDisplayName" : null,
+    "addEntityType" : false
+  },
+  "action" : {
+    "entityType" : "ACTION",
+    "id" : 201,
+    "name" : "Test action for plan: IncidentEvents",
+    "triggerTime" : 1543498763501,
+    "entityTypeDisplayName" : null,
+    "addEntityType" : false
+  },
+  "notes" : "Sample action Notes",
+  "topSeverity" : "ERROR",
+  "topSeverityImage" : {
+    "name" : "PI_CRITICAL_small",
+    "fileName" : "PI_CRITICAL_small.png",
+    "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+    "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+  },
+  "latestEvent" : {
+    "eventType" : "POLICY_CONTINUES_WARNING",
+    "id" : 5305,
+    "guid" : "d553ec4d-07d3-4222-9b83-b533594f8ed2",
+    "displayName" : "Ongoing Warning Health Rule Violation",
+    "eventTime" : 1543498759172,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5305&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  },
+  "fullEventList" : [ {
+    "eventType" : "POLICY_CONTINUES_WARNING",
+    "id" : 5305,
+    "guid" : "d553ec4d-07d3-4222-9b83-b533594f8ed2",
+    "displayName" : "Ongoing Warning Health Rule Violation",
+    "eventTime" : 1543498759172,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5305&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_OPEN_CRITICAL",
+    "id" : 5304,
+    "guid" : "27427481-e90c-4f7d-94b0-cabda374fde7",
+    "displayName" : "New Critical Health Rule Violation",
+    "eventTime" : 1543498751087,
+    "severity" : "ERROR",
+    "severityImage" : {
+      "name" : "PI_CRITICAL_small",
+      "fileName" : "PI_CRITICAL_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+      "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5304&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_CLOSE_WARNING",
+    "id" : 5303,
+    "guid" : "aceba6c6-acea-4b22-b746-71f915138d76",
+    "displayName" : "Health Rule Close",
+    "eventTime" : 1543498745800,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5303&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_CLOSE_CRITICAL",
+    "id" : 5302,
+    "guid" : "89212f6b-9f0d-49e0-ae95-9ce1bd2c094e",
+    "displayName" : "Health Rule Close",
+    "eventTime" : 1543498733699,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5302&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_CONTINUES_CRITICAL",
+    "id" : 5301,
+    "guid" : "98380cae-120d-422b-b3ae-7a3b006664d6",
+    "displayName" : "Ongoing Critical Health Rule Violation",
+    "eventTime" : 1543498733430,
+    "severity" : "ERROR",
+    "severityImage" : {
+      "name" : "PI_CRITICAL_small",
+      "fileName" : "PI_CRITICAL_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+      "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5301&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_UPGRADED",
+    "id" : 5300,
+    "guid" : "7b57b9f2-ba0a-4cc7-8219-89802e479528",
+    "displayName" : "Health Rule State changed from Warning to Critical",
+    "eventTime" : 1543498727843,
+    "severity" : "ERROR",
+    "severityImage" : {
+      "name" : "PI_CRITICAL_small",
+      "fileName" : "PI_CRITICAL_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+      "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5300&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_CANCELED_WARNING",
+    "id" : 5299,
+    "guid" : "c8662898-a1d3-4077-8dec-0666869afc97",
+    "displayName" : "Health Rule Canceled",
+    "eventTime" : 1543498723438,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5299&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_CANCELED_CRITICAL",
+    "id" : 5298,
+    "guid" : "e0aeea01-0778-407d-b36b-e96cb87d89f6",
+    "displayName" : "Health Rule Canceled",
+    "eventTime" : 1543498722518,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5298&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_DOWNGRADED",
+    "id" : 5297,
+    "guid" : "fd97dcb9-89df-4462-8ce8-a6aea264bce7",
+    "displayName" : "Health Rule State changed from Critical to Warning",
+    "eventTime" : 1543498720431,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5297&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_OPEN_WARNING",
+    "id" : 5296,
+    "guid" : "2083a762-ef3a-4510-9270-afab953fbc6e",
+    "displayName" : "New Warning Health Rule Violation",
+    "eventTime" : 1543498709982,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5296&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  } ],
+  "fullEventsNodeMap" : {
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b0" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b1" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b2" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b3" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b4" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b5" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b6" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b7" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b8" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    },
+    "com.singularity.ee.controller.beans.action.context.EventInfo@14b9" : {
+      "id" : 0,
+      "name" : null,
+      "tierId" : 0,
+      "tierName" : null,
+      "machineId" : 0,
+      "machineName" : null,
+      "machineAgentPresent" : false,
+      "machineAgentVersion" : null,
+      "appAgentPresent" : false,
+      "appAgentVersion" : null,
+      "ipAddresses" : null,
+      "agentType" : null
+    }
+  },
+  "fullEventsByTypeMap" : {
+    "Health Rule" : [ {
+      "eventType" : "POLICY_CONTINUES_WARNING",
+      "id" : 5305,
+      "guid" : "d553ec4d-07d3-4222-9b83-b533594f8ed2",
+      "displayName" : "Ongoing Warning Health Rule Violation",
+      "eventTime" : 1543498759172,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5305&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_OPEN_CRITICAL",
+      "id" : 5304,
+      "guid" : "27427481-e90c-4f7d-94b0-cabda374fde7",
+      "displayName" : "New Critical Health Rule Violation",
+      "eventTime" : 1543498751087,
+      "severity" : "ERROR",
+      "severityImage" : {
+        "name" : "PI_CRITICAL_small",
+        "fileName" : "PI_CRITICAL_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+        "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5304&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_CLOSE_WARNING",
+      "id" : 5303,
+      "guid" : "aceba6c6-acea-4b22-b746-71f915138d76",
+      "displayName" : "Health Rule Close",
+      "eventTime" : 1543498745800,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5303&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_CLOSE_CRITICAL",
+      "id" : 5302,
+      "guid" : "89212f6b-9f0d-49e0-ae95-9ce1bd2c094e",
+      "displayName" : "Health Rule Close",
+      "eventTime" : 1543498733699,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5302&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_CONTINUES_CRITICAL",
+      "id" : 5301,
+      "guid" : "98380cae-120d-422b-b3ae-7a3b006664d6",
+      "displayName" : "Ongoing Critical Health Rule Violation",
+      "eventTime" : 1543498733430,
+      "severity" : "ERROR",
+      "severityImage" : {
+        "name" : "PI_CRITICAL_small",
+        "fileName" : "PI_CRITICAL_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+        "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5301&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_UPGRADED",
+      "id" : 5300,
+      "guid" : "7b57b9f2-ba0a-4cc7-8219-89802e479528",
+      "displayName" : "Health Rule State changed from Warning to Critical",
+      "eventTime" : 1543498727843,
+      "severity" : "ERROR",
+      "severityImage" : {
+        "name" : "PI_CRITICAL_small",
+        "fileName" : "PI_CRITICAL_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+        "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5300&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_CANCELED_WARNING",
+      "id" : 5299,
+      "guid" : "c8662898-a1d3-4077-8dec-0666869afc97",
+      "displayName" : "Health Rule Canceled",
+      "eventTime" : 1543498723438,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5299&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_CANCELED_CRITICAL",
+      "id" : 5298,
+      "guid" : "e0aeea01-0778-407d-b36b-e96cb87d89f6",
+      "displayName" : "Health Rule Canceled",
+      "eventTime" : 1543498722518,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5298&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_DOWNGRADED",
+      "id" : 5297,
+      "guid" : "fd97dcb9-89df-4462-8ce8-a6aea264bce7",
+      "displayName" : "Health Rule State changed from Critical to Warning",
+      "eventTime" : 1543498720431,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5297&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_OPEN_WARNING",
+      "id" : 5296,
+      "guid" : "2083a762-ef3a-4510-9270-afab953fbc6e",
+      "displayName" : "New Warning Health Rule Violation",
+      "eventTime" : 1543498709982,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5296&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    } ]
+  },
+  "clampLimit" : -1,
+  "clamped" : false,
+  "clampedEventList" : [ {
+    "eventType" : "POLICY_CONTINUES_WARNING",
+    "id" : 5305,
+    "guid" : "d553ec4d-07d3-4222-9b83-b533594f8ed2",
+    "displayName" : "Ongoing Warning Health Rule Violation",
+    "eventTime" : 1543498759172,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5305&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_OPEN_CRITICAL",
+    "id" : 5304,
+    "guid" : "27427481-e90c-4f7d-94b0-cabda374fde7",
+    "displayName" : "New Critical Health Rule Violation",
+    "eventTime" : 1543498751087,
+    "severity" : "ERROR",
+    "severityImage" : {
+      "name" : "PI_CRITICAL_small",
+      "fileName" : "PI_CRITICAL_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+      "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5304&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_CLOSE_WARNING",
+    "id" : 5303,
+    "guid" : "aceba6c6-acea-4b22-b746-71f915138d76",
+    "displayName" : "Health Rule Close",
+    "eventTime" : 1543498745800,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5303&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_CLOSE_CRITICAL",
+    "id" : 5302,
+    "guid" : "89212f6b-9f0d-49e0-ae95-9ce1bd2c094e",
+    "displayName" : "Health Rule Close",
+    "eventTime" : 1543498733699,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5302&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_CONTINUES_CRITICAL",
+    "id" : 5301,
+    "guid" : "98380cae-120d-422b-b3ae-7a3b006664d6",
+    "displayName" : "Ongoing Critical Health Rule Violation",
+    "eventTime" : 1543498733430,
+    "severity" : "ERROR",
+    "severityImage" : {
+      "name" : "PI_CRITICAL_small",
+      "fileName" : "PI_CRITICAL_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+      "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5301&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_UPGRADED",
+    "id" : 5300,
+    "guid" : "7b57b9f2-ba0a-4cc7-8219-89802e479528",
+    "displayName" : "Health Rule State changed from Warning to Critical",
+    "eventTime" : 1543498727843,
+    "severity" : "ERROR",
+    "severityImage" : {
+      "name" : "PI_CRITICAL_small",
+      "fileName" : "PI_CRITICAL_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+      "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5300&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_CANCELED_WARNING",
+    "id" : 5299,
+    "guid" : "c8662898-a1d3-4077-8dec-0666869afc97",
+    "displayName" : "Health Rule Canceled",
+    "eventTime" : 1543498723438,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5299&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_CANCELED_CRITICAL",
+    "id" : 5298,
+    "guid" : "e0aeea01-0778-407d-b36b-e96cb87d89f6",
+    "displayName" : "Health Rule Canceled",
+    "eventTime" : 1543498722518,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5298&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : false
+  }, {
+    "eventType" : "POLICY_DOWNGRADED",
+    "id" : 5297,
+    "guid" : "fd97dcb9-89df-4462-8ce8-a6aea264bce7",
+    "displayName" : "Health Rule State changed from Critical to Warning",
+    "eventTime" : 1543498720431,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5297&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  }, {
+    "eventType" : "POLICY_OPEN_WARNING",
+    "id" : 5296,
+    "guid" : "2083a762-ef3a-4510-9270-afab953fbc6e",
+    "displayName" : "New Warning Health Rule Violation",
+    "eventTime" : 1543498709982,
+    "severity" : "WARN",
+    "severityImage" : {
+      "name" : "PI_WARNING_small",
+      "fileName" : "PI_WARNING_small.png",
+      "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+      "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+    },
+    "application" : {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    },
+    "tier" : {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    },
+    "node" : {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    },
+    "db" : null,
+    "healthRule" : {
+      "entityType" : "POLICY",
+      "id" : 7,
+      "name" : "Sample Health Rule",
+      "entityTypeDisplayName" : "Health Rule",
+      "addEntityType" : false
+    },
+    "incident" : {
+      "entityType" : "INCIDENT",
+      "id" : 57,
+      "name" : "Sample Incident",
+      "entityTypeDisplayName" : "Incident",
+      "addEntityType" : false
+    },
+    "affectedEntities" : [ {
+      "entityType" : "APPLICATION",
+      "id" : 42,
+      "name" : "Sample Application Name",
+      "entityTypeDisplayName" : "Application",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT",
+      "id" : 42,
+      "name" : "Sample Tier",
+      "entityTypeDisplayName" : "Tier",
+      "addEntityType" : false
+    }, {
+      "entityType" : "APPLICATION_COMPONENT_NODE",
+      "id" : 7,
+      "name" : "Sample Node",
+      "entityTypeDisplayName" : "Node",
+      "addEntityType" : false
+    } ],
+    "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5296&application=42",
+    "summaryMessage" : "Sample Summary Message",
+    "eventMessage" : "Sample Event Message",
+    "eventProperties" : null,
+    "btPerformanceEvent" : false,
+    "healthRuleEvent" : true,
+    "eventTypeKey" : "Health Rule",
+    "anomalyEvent" : false,
+    "healthRuleViolationEvent" : true
+  } ],
+  "clampedEventsByTypeMap" : {
+    "Health Rule" : [ {
+      "eventType" : "POLICY_CONTINUES_WARNING",
+      "id" : 5305,
+      "guid" : "d553ec4d-07d3-4222-9b83-b533594f8ed2",
+      "displayName" : "Ongoing Warning Health Rule Violation",
+      "eventTime" : 1543498759172,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5305&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_OPEN_CRITICAL",
+      "id" : 5304,
+      "guid" : "27427481-e90c-4f7d-94b0-cabda374fde7",
+      "displayName" : "New Critical Health Rule Violation",
+      "eventTime" : 1543498751087,
+      "severity" : "ERROR",
+      "severityImage" : {
+        "name" : "PI_CRITICAL_small",
+        "fileName" : "PI_CRITICAL_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+        "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5304&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_CLOSE_WARNING",
+      "id" : 5303,
+      "guid" : "aceba6c6-acea-4b22-b746-71f915138d76",
+      "displayName" : "Health Rule Close",
+      "eventTime" : 1543498745800,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5303&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_CLOSE_CRITICAL",
+      "id" : 5302,
+      "guid" : "89212f6b-9f0d-49e0-ae95-9ce1bd2c094e",
+      "displayName" : "Health Rule Close",
+      "eventTime" : 1543498733699,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5302&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_CONTINUES_CRITICAL",
+      "id" : 5301,
+      "guid" : "98380cae-120d-422b-b3ae-7a3b006664d6",
+      "displayName" : "Ongoing Critical Health Rule Violation",
+      "eventTime" : 1543498733430,
+      "severity" : "ERROR",
+      "severityImage" : {
+        "name" : "PI_CRITICAL_small",
+        "fileName" : "PI_CRITICAL_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+        "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5301&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_UPGRADED",
+      "id" : 5300,
+      "guid" : "7b57b9f2-ba0a-4cc7-8219-89802e479528",
+      "displayName" : "Health Rule State changed from Warning to Critical",
+      "eventTime" : 1543498727843,
+      "severity" : "ERROR",
+      "severityImage" : {
+        "name" : "PI_CRITICAL_small",
+        "fileName" : "PI_CRITICAL_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_CRITICAL_small.png",
+        "mimeContentRef" : "cid:PI_CRITICAL_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5300&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_CANCELED_WARNING",
+      "id" : 5299,
+      "guid" : "c8662898-a1d3-4077-8dec-0666869afc97",
+      "displayName" : "Health Rule Canceled",
+      "eventTime" : 1543498723438,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5299&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_CANCELED_CRITICAL",
+      "id" : 5298,
+      "guid" : "e0aeea01-0778-407d-b36b-e96cb87d89f6",
+      "displayName" : "Health Rule Canceled",
+      "eventTime" : 1543498722518,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5298&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : false
+    }, {
+      "eventType" : "POLICY_DOWNGRADED",
+      "id" : 5297,
+      "guid" : "fd97dcb9-89df-4462-8ce8-a6aea264bce7",
+      "displayName" : "Health Rule State changed from Critical to Warning",
+      "eventTime" : 1543498720431,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5297&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    }, {
+      "eventType" : "POLICY_OPEN_WARNING",
+      "id" : 5296,
+      "guid" : "2083a762-ef3a-4510-9270-afab953fbc6e",
+      "displayName" : "New Warning Health Rule Violation",
+      "eventTime" : 1543498709982,
+      "severity" : "WARN",
+      "severityImage" : {
+        "name" : "PI_WARNING_small",
+        "fileName" : "PI_WARNING_small.png",
+        "deepLink" : "https://mycompany.saas.appdynamics.com/images/PI_WARNING_small.png",
+        "mimeContentRef" : "cid:PI_WARNING_small@appdynamics.com"
+      },
+      "application" : {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      },
+      "tier" : {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      },
+      "node" : {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      },
+      "db" : null,
+      "healthRule" : {
+        "entityType" : "POLICY",
+        "id" : 7,
+        "name" : "Sample Health Rule",
+        "entityTypeDisplayName" : "Health Rule",
+        "addEntityType" : false
+      },
+      "incident" : {
+        "entityType" : "INCIDENT",
+        "id" : 57,
+        "name" : "Sample Incident",
+        "entityTypeDisplayName" : "Incident",
+        "addEntityType" : false
+      },
+      "affectedEntities" : [ {
+        "entityType" : "APPLICATION",
+        "id" : 42,
+        "name" : "Sample Application Name",
+        "entityTypeDisplayName" : "Application",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT",
+        "id" : 42,
+        "name" : "Sample Tier",
+        "entityTypeDisplayName" : "Tier",
+        "addEntityType" : false
+      }, {
+        "entityType" : "APPLICATION_COMPONENT_NODE",
+        "id" : 7,
+        "name" : "Sample Node",
+        "entityTypeDisplayName" : "Node",
+        "addEntityType" : false
+      } ],
+      "deepLink" : "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5296&application=42",
+      "summaryMessage" : "Sample Summary Message",
+      "eventMessage" : "Sample Event Message",
+      "eventProperties" : null,
+      "btPerformanceEvent" : false,
+      "healthRuleEvent" : true,
+      "eventTypeKey" : "Health Rule",
+      "anomalyEvent" : false,
+      "healthRuleViolationEvent" : true
+    } ]
+  }
+}
+
+Velocity Rendering Log:
+                                DEBUG Null reference [template 'payload:IncidentEvents', line 10, column 7] : $milestone cannot be resolved.
+
+
+Request Line:	POST /events/publish/incident_events HTTP/1.1
+Request Headers:
+X-Events-API-AccountName: mycompany_ebed97fd-fa0d-41f8-9811-2558b9252555
+X-Events-API-Key: ...
+Connection: Close
+singularityheader: appId=5353*ctrlguid=1542799922*acctguid=eee1d4f8-67a2-498e-a725-47e29803822e*ts=1543498763499*btid=599604*guid=9bdea77e-950c-460a-8521-6d0d726c9491*exitguid=1*unresolvedexitid=215595*cidfrom=18131435*etypeorder=HTTP*esubtype=HTTP*cidto=A5605
+Content-Length: 5072
+Content-Type: application/vnd.appd.events+json; charset=UTF-8
+Host: analytics.api.appdynamics.com
+User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_162)
+Accept-Encoding: gzip,deflate
+Request Payload:
+                                [
+{
+#set{ $milestone = "unknown"}
+"id": 57,
+"milestone": "continue"
+"eventType": "POLICY_CONTINUES_WARNING",
+"displayName": "Ongoing Warning Health Rule Violation",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5305&application=42",
+"eventTime": 1543498759172,
+"eventTime_timestamp": 1543498759172,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "WARN",
+"severity_level": 1
+},{
+#set{ continue = "unknown"}
+"id": 57,
+"milestone": "start"
+"eventType": "POLICY_OPEN_CRITICAL",
+"displayName": "New Critical Health Rule Violation",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5304&application=42",
+"eventTime": 1543498751087,
+"eventTime_timestamp": 1543498751087,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "ERROR",
+"severity_level": 2
+},{
+#set{ start = "unknown"}
+"id": 57,
+"milestone": "end"
+"eventType": "POLICY_CLOSE_WARNING",
+"displayName": "Health Rule Close",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5303&application=42",
+"eventTime": 1543498745800,
+"eventTime_timestamp": 1543498745800,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "WARN",
+"severity_level": 1
+},{
+#set{ end = "unknown"}
+"id": 57,
+"milestone": "end"
+"eventType": "POLICY_CLOSE_CRITICAL",
+"displayName": "Health Rule Close",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5302&application=42",
+"eventTime": 1543498733699,
+"eventTime_timestamp": 1543498733699,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "WARN",
+"severity_level": 1
+},{
+#set{ end = "unknown"}
+"id": 57,
+"milestone": "continue"
+"eventType": "POLICY_CONTINUES_CRITICAL",
+"displayName": "Ongoing Critical Health Rule Violation",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5301&application=42",
+"eventTime": 1543498733430,
+"eventTime_timestamp": 1543498733430,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "ERROR",
+"severity_level": 2
+},{
+#set{ continue = "unknown"}
+"id": 57,
+"milestone": "continue"
+"eventType": "POLICY_UPGRADED",
+"displayName": "Health Rule State changed from Warning to Critical",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5300&application=42",
+"eventTime": 1543498727843,
+"eventTime_timestamp": 1543498727843,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "ERROR",
+"severity_level": 2
+},{
+#set{ continue = "unknown"}
+"id": 57,
+"milestone": "end"
+"eventType": "POLICY_CANCELED_WARNING",
+"displayName": "Health Rule Canceled",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5299&application=42",
+"eventTime": 1543498723438,
+"eventTime_timestamp": 1543498723438,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "WARN",
+"severity_level": 1
+},{
+#set{ end = "unknown"}
+"id": 57,
+"milestone": "end"
+"eventType": "POLICY_CANCELED_CRITICAL",
+"displayName": "Health Rule Canceled",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5298&application=42",
+"eventTime": 1543498722518,
+"eventTime_timestamp": 1543498722518,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "WARN",
+"severity_level": 1
+},{
+#set{ end = "unknown"}
+"id": 57,
+"milestone": "continue"
+"eventType": "POLICY_DOWNGRADED",
+"displayName": "Health Rule State changed from Critical to Warning",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5297&application=42",
+"eventTime": 1543498720431,
+"eventTime_timestamp": 1543498720431,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "WARN",
+"severity_level": 1
+},{
+#set{ continue = "unknown"}
+"id": 57,
+"milestone": "start"
+"eventType": "POLICY_OPEN_WARNING",
+"displayName": "New Warning Health Rule Violation",
+"summary:" "Sample Summary Message",
+"deepLink": "https://mycompany.saas.appdynamics.com/#location=APP_EVENT_VIEWER_MODAL&eventSummary=5296&application=42",
+"eventTime": 1543498709982,
+"eventTime_timestamp": 1543498709982,
+"application": "Sample Application Name",
+"tier": "Sample Tier",
+"node": "Sample Node",
+"db": "",
+"severity": "WARN",
+"severity_level": 1
+}]
+
+Redirect Locations:
+Response Status Line:	HTTP/1.1 400 Bad Request
+Response Headers:
+Content-Type: application/json
+Date: Thu, 29 Nov 2018 13:39:23 GMT
+Frame-Options: DENY
+Server: nginx
+X-Content-Security-Policy: default-src 'self'
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Content-Length: 127
+Connection: Close
+Response Payload:
+                                {"statusCode":400,"code":"UnparseableRequest","message":"The request could not parse the json object.","developerMessage":null}
+
+Error Message:
